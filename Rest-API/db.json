@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "balagowshik",
+      "email": "balagowshikmd@gmail.com",
+      "phno": "7871876440",
+      "insurance": "Car Insurance",
+      "details": "wow it's work",
+      "id": 402
+    },
+    {
+      "name": "shree ganesh",
+      "email": "shreeganeshperiyasamy12345@gmail.com",
+      "phno": "6383175501",
+      "insurance": "General Insurance",
+      "details": "hello world",
+      "id": 279
+    },
+    {
+      "name": "anitha",
+      "email": "anitha@gmail.com",
+      "phno": "564546846",
+      "insurance": "Car Insurance",
+      "details": "hello world",
+      "id": 7843
+    }
+  ]
+}
