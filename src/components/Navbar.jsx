@@ -23,8 +23,7 @@ const Navbar = () => {
         {["Insurance", "About", "Articles", "Contact Us"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#00
-            A78E] text-white py-2 px-7 mx-4 rounded-full cursor-pointer font-semibold hover:bg-[#00a767]">
+        <li className="bg-[#00A78E] text-white py-2 px-7 mx-4 rounded-full cursor-pointer font-semibold hover:bg-[#00a767]">
           Join as POSP
         </li>
       </ul>
