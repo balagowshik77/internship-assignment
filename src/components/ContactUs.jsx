@@ -4,7 +4,7 @@ import whatsapp from "../assets/whatsapp.png";
 import mail from "../assets/mail.svg";
 import group from "../assets/group.png";
 import { useState } from "react";
-import api from "../../JsonAPI/data";
+import api from "../../Rest-API/data";
 import { v4 as uuidv4 } from "uuid";
 
 const ContactUs = () => {
