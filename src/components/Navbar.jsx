@@ -39,7 +39,7 @@ const Navbar = () => {
           <AiOutlineClose
             fontSize={28}
             className="text-black md:hidden cursor-pointer"
-            onClick={() => setToggleMenu(false)}  
+            onClick={() => setToggleMenu(false)}
           />
         )}
         {toggleMenu && (
@@ -59,6 +59,9 @@ const Navbar = () => {
                 />
               )
             )}
+            <li className="bg-black text-white  px-3  my-4 rounded-full cursor-pointer font-semibold hover:bg-[#]">
+              Join as POSP
+            </li>
           </ul>
         )}
       </div>
