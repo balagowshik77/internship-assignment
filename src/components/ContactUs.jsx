@@ -46,15 +46,15 @@ const ContactUs = () => {
   // };
 
   return (
-    <div className="w-full bg-[#FFFDFE]">
+    <div className="w-full bg-[#FFFDFE] sm:w-full ">
       <div>
         <img className="w-full h-[150px]" src={contactus} />
         <h1 className="text-[#293651] text-3xl font-bold flex justify-center items-center mt-[-100px]">
           Contact Us
         </h1>
       </div>
-      <div className="flex w-full mt-[140px] md:flex-row flex-col justify-center items-center justify-around">
-        <div className="grid grid-cols gap-11 content-center ">
+      <div className="flex w-full md:mt-[-200px] md:flex-row flex-col  items-center justify-around md:h-[1500px] h-[2000px]  ">
+        <div className="grid grid-cols gap-11 content-center sm:mb-5">
           <div className="w-[315px] h-[170  px] rounded-md flex flex-col items-start p-[20px] bg-[#FFFFFF] drop-shadow-2xl">
             <div className="h-[50px] w-[50px] bg-[#E6F7F4] rounded-md">
               <div className="flex justify-center items-center mt-[10px]">
@@ -85,7 +85,7 @@ const ContactUs = () => {
             <h1 className="font-medium pt-2">hello@smarttechinsurance.co.in</h1>
           </div>
         </div>
-        <div className="md:w-[550px] w-[400px] h-[800px] bg-[#00A78E] rounded-md  ">
+        <div className="md:w-[550px] w-[350px] h-[800px] bg-[#00A78E] rounded-md   ">
           <div className="flex flex-row justify-center items-center justify-between mt-4">
             <div className="w-[198px] h-[104px] text-2xl font-bold text-white  p-4  ml-4">
               Request a <span className="text-[#FECE4C]">Callback</span> from
@@ -95,7 +95,7 @@ const ContactUs = () => {
               <img src={group} />
             </div>
           </div>
-          <div className="md:w-[490px] w-[350px] h-[515px] bg-[#008672] flex flex-col justify-center items-center rounded-md mt-8 pt-[10px] ml-[30px]">
+          <div className="md:w-[490px] w-[320px] h-[515px] bg-[#008672] flex flex-col justify-center items-center rounded-md md:mt-8 mt-12 pt-[10px] md:ml-[30px] ml-[15px]">
             <form onSubmit={(e) => submit(e)}>
               <div>
                 <input
@@ -105,7 +105,7 @@ const ContactUs = () => {
                   value={data.name}
                   name="name"
                   onChange={(e) => handle(e)}
-                  className=" text-[#B4B4B4] md:w-[450px] w-[350px] h-[48px] mb-4 bg-white border-none rounded-md p-4 text-xl mt-4"
+                  className=" text-[#B4B4B4] md:w-[450px] w-[290px] h-[48px] mb-4 bg-white border-none rounded-md p-4 text-xl mt-4"   
                 />
               </div>
               <div>
@@ -116,7 +116,7 @@ const ContactUs = () => {
                   value={data.email}
                   onChange={(e) => handle(e)}
                   name="email"
-                  className=" text-[#B4B4B4] md:w-[450px] w-[350px] mb-4 h-[48px] bg-white border-none rounded-md p-4 text-xl"
+                  className=" text-[#B4B4B4] md:w-[450px] w-[290px] mb-4 h-[48px] bg-white border-none rounded-md p-4 text-xl"
                 />
               </div>
               <div>
@@ -131,7 +131,7 @@ const ContactUs = () => {
                   id="phno"
                   value={data.phno}
                   onChange={(e) => handle(e)}
-                  className="md:w-[362px] w-[200px] h-[48px] mb-4 ml-4 bg-white border-none rounded-md p-4 text-xl"
+                  className="md:w-[362px] w-[205px] h-[48px] mb-4 ml-4 bg-white border-none rounded-md p-4 text-xl"
                 />
               </div>
               <div>
@@ -140,7 +140,7 @@ const ContactUs = () => {
                   id="insurance"
                   placeholder="Select Insurance"
                   value={data.insrance}
-                  className="text-[#B4B4B4] md:w-[450px] w-[350px] mb-4 h-[53px] bg-white border-none rounded-md p-4 text-lg"
+                  className="text-[#B4B4B4] md:w-[450px] w-[290px] mb-4 h-[53px] bg-white border-none rounded-md p-4 text-lg"
                   onChange={(e) => handle(e)}
                 >
                   <option value="Health Insurance">Health Insurance</option>
@@ -157,15 +157,15 @@ const ContactUs = () => {
                   value={data.details}
                   onChange={(e) => handle(e)}
                   name="details"
-                  className=" text-[#B4B4B4] md:w-[450px] w-[350px] mb-4 h-[150px] bg-white border-none rounded-md p-4 text-xl "
+                  className=" text-[#B4B4B4] md:w-[450px] w-[290px] mb-4 h-[150px] bg-white border-none rounded-md p-4 text-xl "
                 />
               </div>
-              <button className="text-[#084F44] md:w-[450px] w-[350px] mb-4 h-[48px] bg-[#FECE4C] border-none rounded-md p-4 text-2xl font-bold flex justify-center items-center cursor-pointer">
+              <button className="text-[#084F44] md:w-[450px] w-[290px] mb-4 h-[48px] bg-[#FECE4C] border-none rounded-md p-4 text-2xl font-bold flex justify-center items-center cursor-pointer">
                 REQUEST CALLBACK
               </button>
             </form>
           </div>
-          <div className="w-[295px] h-[39px] flex justify-center items-center text-center text-white mt-12 ml-[130px] pb-8">
+          <div className="w-[295px] h-[39px] flex justify-center items-center text-center text-white mt-12 md:ml-[130px] ml-[25px] pb-8 ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </div>

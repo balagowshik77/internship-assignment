@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
-    <div>
+    <div className="sm:w-full">
       <Navbar />
       <ContactUs />
       <Footer />

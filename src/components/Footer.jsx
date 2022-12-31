@@ -8,8 +8,8 @@ import irdai from "../assets/irdai.png";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-white drop-shadow-2xl flex flex-col  h-[448px mt-[600px]">
-      <div className="flex flex-row m-4 p-2 mt-24 justify-center items-center justify-evenly">
+    <div className="w-full bg-white drop-shadow-2xl flex flex-col  md:h-[500px] h-[1145px]">
+      <div className="flex md:flex-row flex-col m-4 p-2 mt-24 justify-center items-center justify-evenly">
         <div className="h-[214px] w-[281px] flex flex-col justify-center items-center text-center">
           <div className="flex flex-row">
             <img src={frame} />{" "}
@@ -24,7 +24,7 @@ const Footer = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text.
           </div>
-          <div className="flex flex-row justify-start items-center mt-8 justify-around ml-[-150px]">
+          <div className="flex flex-row justify-start items-center mt-8 justify-around md:ml-[-150px] ml-15">
             <div className="bg-[#00A78E] w-[28px] h-[28px] rounded-md ml-2">
               <img className="ml-[10px] mt-2" src={facebook} />
             </div>
@@ -39,8 +39,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="h-[214px] w-[281px] flex flex-col justify-center items-center text-center">
-          <div className=" flex flex-col justify-start mt-[-30px]">
+
+        <div className="h-[214px] w-[281px] flex flex-col justify-center items-center text-center ">
+          <div className=" flex flex-col justify-start md:mt-[-30px] mt-20">
             <h1 className="text-[#00A78E] text-3xl font-semibold">Insurance</h1>
             <div className="ml-6 mt-2">
               <div className="flex flex-row mt-2">
@@ -67,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-[214px] w-[281px] flex flex-col justify-center items-center text-center">
-          <div className=" flex flex-col justify-start mt-[-30px]">
+          <div className=" flex flex-col justify-start md:mt-[-30px] mt-20">
             <h1 className="text-[#00A78E] text-3xl font-semibold">Company</h1>
             <div className="ml-2 mt-2">
               <div className="flex flex-row mt-2">
@@ -93,8 +94,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="h-[214px] w-[281px] flex flex-col justify-center items-center text-center">
-          <div className=" flex flex-col justify-start mt-[-30px] text-left">
+          <div className=" flex flex-col justify-start md:mt-[-30px] mt-20 md:text-left text-center">
             <img className="" src={irdai} />
             <div className="text-[#00A78E] text-lg font-semibold">
               Insurance Brokers
@@ -113,13 +115,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24 flex flex-row justify-around text-white bg-[#00A78E] justify-center items-center h-[50px]">
-      <div>© 2022 Smarttech insurence Broker, All Rights Reserved.</div>
-      <div className="flex flex-row justify-evenly">
-        <div className="ml-6">Privacy Policy</div>
-        <div className="ml-6">Terms & Conditions</div>
-        <div className="ml-6">FAQ</div>
-      </div>
+      <div className="md:mt-24 mt-[40px] flex flex-row md:justify-around justify-evenly text-white bg-[#00A78E] justify-center items-center md:h-[100px] h-[150px]">
+        <div className="w-[250px]">© 2022 Smarttech insurence Broker, All Rights Reserved.</div>
+        <div className="flex flex-row justify-evenly">
+          <div className="md:ml-6 ">Privacy Policy</div>
+          <div className="md:ml-6 ">Terms & Conditions</div>
+          <div className="md:ml-6 mr-2">FAQ</div>
+        </div>
       </div>
     </div>
   );

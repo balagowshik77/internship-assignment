@@ -10,9 +10,9 @@ const NavBarItem = ({ title, classProps }) => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4 sm:w-full">
+    <nav className="md:w-full w-full flex md:justify-center justify-between items-center p-4 sticky">
       <div className="md:flex-[2] flex-initial justify-center items-center">
-        <div className="w-full flex justify-start ml-8">
+        <div className="w-full flex justify-start md:ml-8 mr-4">
           <img src={frame} />
           <h1 className="font-bold text-2xl flex justify-center items-center">
             Policy Mart
@@ -39,13 +39,13 @@ const Navbar = () => {
           <AiOutlineClose
             fontSize={28}
             className="text-black md:hidden cursor-pointer"
-            onClick={() => setToggleMenu(false)}
+            onClick={() => setToggleMenu(false)}  
           />
         )}
         {toggleMenu && (
           <ul
-            className="z-10 fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl bg-slate-500 md:hidden list-none
-            flex flex-col justify-start items-end rounded-md  text-black animate-slide-in"
+            className="z-10 fixed -top-0 -right-1 p-3 w-[50vw] h-[320px] shadow-2xl bg-[#00A78E] md:hidden list-none
+            flex flex-col justify-start items-end rounded-md  text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
